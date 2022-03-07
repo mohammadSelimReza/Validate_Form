@@ -1,3 +1,4 @@
+8
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,33 +14,32 @@
 <body>
     <main>
         <!-- A Contract Form  -->
-        <form name="contactForm" onsubmit="validateForm()" action="/index.html" method="post">
+        <section name="contactForm">
             <h2>Application Form</h2>
             <!-- input field for name -->
             <div class="row">
-                <label for="name">Full Name:</label>
-                <input type="text" name="name" required>
+                <label for="name">Full Name:</label> <input id="name" type="text" name="name" required>
                 <div class="error" id="nameErr"></div>
             </div>
             <!-- ... -->
             <!-- input field for email -->
             <div class="row">
                 <label for="email">Email Address:</label>
-                <input type="email" name="email" required>
+                <input id="email" type="email" name="email" required>
                 <div class="error" id="emailErr"></div>
             </div>
             <!-- ... -->
             <!-- input field for number -->
             <div class="row">
                 <label for="number">Mobile Number:</label>
-                <input type="number" name="number" required>
+                <input id="num" type="number" name="number" required>
                 <div class="error" id="numErr"></div>
             </div>
             <!-- ... -->
             <!-- select a country -->
             <div class="row">
                 <label for="select">Country:</label>
-                <select name="country">
+                <select id="country" name="country">
                     <option>Select</option>
                     <option>Bangladesh</option>
                     <option>Canada</option>
@@ -53,7 +53,7 @@
             <!-- select gender -->
             <div class="row">
                 <label for="gender">Gender:</label>
-                <div class="form-inline">
+                <div id="gender" class="form-inline">
                     <label><input type="radio" name="gender" value="male">Male</label>
                     <label><input type="radio" name="gender" value="female">Female</label>
                     <label><input type="radio" name="gender" value="others">Others</label>
@@ -64,7 +64,7 @@
             <!-- select hobbies -->
             <div class="row">
                 <label>Hobbie <i>(optional)</i></label>
-                <div class="form-inline">
+                <div id="hobbie" class="form-inline">
                     <label><input type="checkbox" name="hobbie[]" value="sports">Sports</label>
                     <label><input type="checkbox" name="hobbie[]" value="movies">Movies</label>
                     <label><input type="checkbox" name="hobbie[]" value="music">Music</label>
@@ -73,9 +73,9 @@
             <!-- ... -->
             <div class="row">
                 <!-- click submit... -->
-                <input type="submit" value="Submit">
+                <button id="btn" class="submit">submit</button>
             </div>
-        </form>
+        </section>
     </main>
     <!-- external files added... -->
     <script src="/js/app.js"></script>

@@ -9,7 +9,7 @@ h2 {
     text-decoration: underline;
 }
 
-form {
+section {
     width: 300px;
     background-color: #fff;
     padding: 15px 40px 40px;
@@ -60,13 +60,14 @@ select {
     font-size: 90%;
 }
 
-input[type="submit"] {
+.submit {
     font-size: 110%;
     font-weight: bold;
     background-color: #006dcc;
     border-color: #016BC1;
     box-shadow: 0 3px 0 #0165b6;
     cursor: pointer;
+    padding: 5px 30px;
 }
 
 input[type="submit"]:hover {
